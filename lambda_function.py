@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     req = 'http://worldtimeapi.org/api/ip/' + ipAddr + '.json' 
     res = requests.get(req)
     body = res.json()
-    body['version'] = "v1"
+    body['version'] = "v2"
     
      # TODO implement
     return {
